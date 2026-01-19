@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111; /* tamna pozadina */
+    color: #ffa500; /* narandžasti tekst */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header img.logo {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    font-weight: bold;
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+main h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.image-grid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.about {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+footer {
+    background-color: #000;
+    color: #ffa500;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+}
