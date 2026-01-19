@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mar1-lab.github.io/MarkoTotIT70-23/sitemap.xml
